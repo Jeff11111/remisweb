@@ -544,7 +544,7 @@ proc/get_damage_icon_part(damage_state, body_part, var/icon/dam_icon = 'icons/mo
 
 	var/datum/organ/external/M = get_organ("mouth")
 	icon_key = "[icon_key][husk ? 1 : 0][fat ? 1 : 0][hulk ? 1 : 0][skeleton ? 1 : 0][(gender == FEMALE && age >= 60) ? 1 : 0][(M.status & ORGAN_DESTROYED) ? 1 : 0][s_tone]"
-	if(femboy == FALSE)
+	if(!femboy)
 		bodyhair()
 	var/icon/base_icon
 	var/icon/lbase_icon

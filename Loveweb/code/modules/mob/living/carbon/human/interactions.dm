@@ -948,8 +948,10 @@ var/list/cuckoldlist = list()
 			var/moan = rand(1, 7)
 			if (moan == lastmoan)
 				moan--
-			if(g == "m")
+			if(g == "m" && !H.femboy)
 				playsound(loc, "honk/sound/interactions/moan_[g][moan].ogg", 90, 0, -5)
+			else if(g == "m" && H.femboy)
+				playsound(loc, "honk/sound/interactions/moan_[g][moan].ogg", 0, 0, 0)
 			else if (g == "f")
 				var/sound_path
 				var/sound
