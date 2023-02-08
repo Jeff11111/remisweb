@@ -59,13 +59,6 @@
 	item_color = "baron"
 	flags = FPRINT | TABLEPASS
 
-/obj/item/clothing/under/hitman
-	name = "special suit"
-	desc = "A pristine outfit for a clean night out."
-	icon_state = "hitman"
-	item_state = "hitman"
-	item_color = "hitman"
-
 /obj/item/clothing/under/rank/captain/child //Alright, technically not a 'civilian' but its better then giving a .dm file for a single define.
 	name = "noble garments"
 	desc = "Some clothes for snobby people."
@@ -122,6 +115,14 @@
 	icon_state = "practicus"
 	item_state = "bl_suit"
 	item_color = "practicus"
+	flags = FPRINT | TABLEPASS
+
+/obj/item/clothing/under/hitman
+	name = "special suit"
+	desc = "A pristine outfit for a clean night out."
+	icon_state = "hitman"
+	item_state = "bl_suit"
+	item_color = "hitman"
 	flags = FPRINT | TABLEPASS
 
 /obj/item/clothing/under/rank/soulbreaker

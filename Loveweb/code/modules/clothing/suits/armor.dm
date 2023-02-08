@@ -405,8 +405,8 @@
 /obj/item/clothing/suit/armor/vest/security/marduk
 	name = "sophisticated armor"
 	desc = "Plate armor with a tabard representing Firethorn's colors"
-	icon_state = "marduk"
-	item_state = "armor"
+	icon_state = "castellan"
+	item_state = "castellan"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|GROIN|LEGS|LEGS_TOGETHER
 	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS|GROIN|LEGS
 	min_cold_protection_temperature = ARMOR_MIN_COLD_PROTECTION_TEMPERATURE

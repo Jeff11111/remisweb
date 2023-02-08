@@ -5,7 +5,7 @@ var/roundsinvite = 1
 client/verb/prompt_command()
 	set name = "Command Prompt"
 	set category = "OOC"
-	var/list/inputlist = list("showlads","togglenat","setspouse","invite","togglefuta","mycolor","retro","love","auth", "register", "add_donator", "ban", "unban", "add_role", "absencelabiosdeseda", "superretro","remove_role", "musica", "tremer","rsctoggle","fix64","togglesquire","togglesize","setfontsize")
+	var/list/inputlist = list("showlads","togglenat","setspouse","invite","togglefuta","togglefemboy","mycolor","retro","love","auth", "register", "add_donator", "ban", "unban", "add_role", "absencelabiosdeseda", "superretro","remove_role", "musica", "tremer","rsctoggle","fix64","togglesquire","togglesize","setfontsize")
 	var/list/debug = list("showgamemode", "setgamemode", "changeskill", "showaspect")
 	var/chosenoption = input("Input a command.","[src.key]")
 	if(!chosenoption)
