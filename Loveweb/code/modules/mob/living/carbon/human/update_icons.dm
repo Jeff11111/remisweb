@@ -544,8 +544,7 @@ proc/get_damage_icon_part(damage_state, body_part, var/icon/dam_icon = 'icons/mo
 
 	var/datum/organ/external/M = get_organ("mouth")
 	icon_key = "[icon_key][husk ? 1 : 0][fat ? 1 : 0][hulk ? 1 : 0][skeleton ? 1 : 0][(gender == FEMALE && age >= 60) ? 1 : 0][(M.status & ORGAN_DESTROYED) ? 1 : 0][s_tone]"
-	if(!femboy)
-		bodyhair()
+	bodyhair()
 	var/icon/base_icon
 	var/icon/lbase_icon
 	if(human_icon_cache[icon_key] && lifeweb_locked == FALSE && QUEMLIGA == FALSE)
@@ -1812,6 +1811,7 @@ If you draw the arms, sleeves and suit arms at once, there are clipping issues.
 /mob/living/carbon/human/proc/bodyhair(var/update_icons=1)
 	var/fat = (FAT in src.mutations)
 	if(ismonster(src)) return
+	if(gender == MALE && femboy) return
 	overlays_standing[BODYHAIR_LAYER] = null
 	overlays_lying[BODYHAIR_LAYER] = null
 	if(species.name == "Human" && !fat)

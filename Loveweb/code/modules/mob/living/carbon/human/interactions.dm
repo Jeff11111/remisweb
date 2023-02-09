@@ -333,11 +333,13 @@ var/list/cuckoldlist = list()
 		P.ConDom.update_icon()
 
 	var/male_noises = "honk/sound/interactions/final_m[rand(1, 5)].ogg"
+	var/male_noises_volume = 90
 	if(H.femboy)
 		male_noises = "honk/sound/new/Moans/male/femboy[rand(1, 7)].ogg"
+		male_noises_volume = 130
 	switch(H.gender)
 		if(MALE)
-			playsound(loc, male_noises, 90, 0, -5)
+			playsound(loc, male_noises, male_noises_volume, 0, -5)
 		if(FEMALE)
 			playsound(loc, "honk/sound/interactions/final_f[rand(1, 3)].ogg", 90, 0, -5)
 	H.druggy = 30
@@ -954,7 +956,7 @@ var/list/cuckoldlist = list()
 			if(g == "m" && !H.femboy)
 				playsound(loc, "honk/sound/interactions/moan_[g][moan].ogg", 90, 0, -5)
 			else if(g == "m" && H.femboy)
-				playsound(loc, "honk/sound/new/Moans/male/femboy[moan].ogg", 90, 0, -6)
+				playsound(loc, "honk/sound/new/Moans/male/femboy[moan].ogg", 130, 0, -6)
 			else if (g == "f")
 				var/sound_path
 				var/sound
