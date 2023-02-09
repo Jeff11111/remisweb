@@ -50,6 +50,7 @@ var/list/admin_verbs_admin = list(
 	/datum/admins/proc/toggleoocdead,	/*toggles ooc on/off for everyone who is dead*/
 	/datum/admins/proc/toggledsay,    /*toggles dsay on/off for everyone*/
 	/client/proc/game_panel,			/*game panel, allows to change game-mode etc*/
+	/client/proc/delay_padlas,
 	/datum/admins/proc/PlayerNotes,
 	/client/proc/cmd_mod_say,
 	/datum/admins/proc/show_player_info,
@@ -433,6 +434,14 @@ var/list/admin_verbs_mod = list(
 	set category = "Admin"
 	if(holder)
 		holder.Game()
+	return
+
+/client/proc/delay_padlas()
+	set name = "Delay Padla"
+	set category = "Admin"
+	if(holder)
+		log_admin("[key_name(usr)] has turned padlas [global_padlas ? "ON" : "OFF"]!")
+		global_padlas = !global_padlas
 	return
 
 /client/proc/secrets()

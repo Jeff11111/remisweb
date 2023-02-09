@@ -1,50 +1,50 @@
 /////////////FATES/////////////
 //SEASPOTTER MERC
-var/global/list/seaspotter_merc = list("remis12", "jimmynutron2013", "GuppyLaxx")
+var/global/list/seaspotter_merc = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor")
 //RED DAWN MERC
-var/global/list/reddawn_merc = list("remis12", "jimmynutron2013", "GuppyLaxx")
+var/global/list/reddawn_merc = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor")
 //MERCENARY
-var/global/list/mercenary_donor = list("remis12", "jimmynutron2013", "GuppyLaxx")
+var/global/list/mercenary_donor = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor")
 //URCHIN
-var/global/list/urchin_donor = list("remis12", "jimmynutron2013", "GuppyLaxx")
+var/global/list/urchin_donor = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor")
 //TRIBUNAL VET
-var/global/list/tribunal_vet = list("remis12", "jimmynutron2013", "GuppyLaxx")
+var/global/list/tribunal_vet = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor")
 //LORD
-var/global/list/lord = list("remis12", "jimmynutron2013", "GuppyLaxx")
+var/global/list/lord = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor")
 //CRUSADER
-var/global/list/crusader = list("remis12", "jimmynutron2013", "GuppyLaxx")
+var/global/list/crusader = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor")
 //TOPHAT
-var/global/list/tophat = list("remis12", "jimmynutron2013", "GuppyLaxx")
+var/global/list/tophat = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor")
 //MONK
-var/global/list/monk = list("remis12", "jimmynutron2013", "GuppyLaxx")
+var/global/list/monk = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor")
 //FUTA
-var/global/list/futa = list("remis12", "jimmynutron2013", "GuppyLaxx")
+var/global/list/futa = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor")
 //30CM
-var/global/list/mobilephone = list("remis12", "jimmynutron2013", "GuppyLaxx")
+var/global/list/mobilephone = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor")
 //TELEFONE
-var/global/list/remigrator = list("remis12", "jimmynutron2013", "GuppyLaxx")
+var/global/list/remigrator = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor")
 //REMIGRATION
-var/global/list/thirtycm = list("remis12", "jimmynutron2013", "GuppyLaxx")
+var/global/list/thirtycm = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor")
 //TRAP APOC
-var/global/list/trapapoc = list("remis12", "jimmynutron2013", "GuppyLaxx")
+var/global/list/trapapoc = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor")
 //OUTLAW
-var/global/list/outlaw = list("remis12", "jimmynutron2013", "GuppyLaxx")
+var/global/list/outlaw = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor")
 //ADULT SQUIRE
-var/global/list/adultsquire = list("remis12", "jimmynutron2013", "GuppyLaxx")
+var/global/list/adultsquire = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor")
 //ITEMS
-var/global/list/waterbottledonation = list("remis12", "jimmynutron2013", "GuppyLaxx")
-var/global/list/luxurydonation = list("remis12", "jimmynutron2013", "GuppyLaxx")
-var/global/list/pjack = list("remis12", "jimmynutron2013", "GuppyLaxx")
+var/global/list/waterbottledonation = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor")
+var/global/list/luxurydonation = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor")
+var/global/list/pjack = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor")
 //OOC COLOR
-var/global/list/customooccolorlist = list("remis12", "jimmynutron2013", "GuppyLaxx")
+var/global/list/customooccolorlist = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor")
 
-var/global/list/coolboombox = list("remis12", "jimmynutron2013", "GuppyLaxx")
+var/global/list/coolboombox = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor")
 
-var/global/list/singer = list("remis12", "jimmynutron2013", "GuppyLaxx")
+var/global/list/singer = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor")
 
-var/global/list/weeDonator = list("remis12", "jimmynutron2013", "GuppyLaxx")
-var/global/list/baliset = list("remis12", "jimmynutron2013", "GuppyLaxx")
-var/global/list/black_cloak = list("remis12", "jimmynutron2013", "GuppyLaxx")
+var/global/list/weeDonator = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor")
+var/global/list/baliset = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor")
+var/global/list/black_cloak = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor")
 var/global/list/bee_queen = list()
 
 var/global/list/secret_devs = list("remis12")

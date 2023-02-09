@@ -1,4 +1,5 @@
 var/datum/padla/Padla = null
+var/global/global_padlas = FALSE
 
 /datum/controller/process/padla/setup()
 	name = "padla"
@@ -23,10 +24,12 @@ var/datum/padla/Padla = null
 
 /datum/padla/New()
 	..()
-	timeForNextPadla = rand(20 MINUTES, 35 MINUTES)
+	timeForNextPadla = rand(50 MINUTES, 60 MINUTES)
 
 /datum/padla/proc/process()
 	timeForNextPadla = max(0, timeForNextPadla-1 SECONDS)
+	if(!global_padlas)
+		return
 	if(timeForNextPadla == 0)
 		doPadla()
 		to_chat(world, "<br>")
