@@ -1,50 +1,50 @@
 /////////////FATES/////////////
 //SEASPOTTER MERC
-var/global/list/seaspotter_merc = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor", "SpicySalami")
+var/global/list/seaspotter_merc = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor", "SpicySalami", "Mannypardo", "BlackCat-055, S1lv3rV1x3n", "SpookyPineapple", "SSix")
 //RED DAWN MERC
-var/global/list/reddawn_merc = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor", "SpicySalami")
+var/global/list/reddawn_merc = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor", "SpicySalami", "Mannypardo", "BlackCat-055, S1lv3rV1x3n", "SpookyPineapple", "SSix")
 //MERCENARY
-var/global/list/mercenary_donor = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor", "SpicySalami")
+var/global/list/mercenary_donor = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor", "SpicySalami", "Mannypardo", "BlackCat-055, S1lv3rV1x3n", "SpookyPineapple", "SSix")
 //URCHIN
-var/global/list/urchin_donor = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor", "SpicySalami")
+var/global/list/urchin_donor = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor", "SpicySalami", "Mannypardo", "BlackCat-055, S1lv3rV1x3n", "SpookyPineapple", "SSix")
 //TRIBUNAL VET
-var/global/list/tribunal_vet = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor", "SpicySalami")
+var/global/list/tribunal_vet = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor", "SpicySalami", "Mannypardo", "BlackCat-055, S1lv3rV1x3n", "SpookyPineapple", "SSix")
 //LORD
-var/global/list/lord = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor", "SpicySalami")
+var/global/list/lord = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor", "SpicySalami", "Mannypardo", "Mannypardo")
 //CRUSADER
-var/global/list/crusader = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor", "SpicySalami")
+var/global/list/crusader = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor", "SpicySalami", "Mannypardo", "BlackCat-055, S1lv3rV1x3n", "SpookyPineapple", "SSix")
 //TOPHAT
-var/global/list/tophat = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor", "SpicySalami")
+var/global/list/tophat = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor", "SpicySalami", "Mannypardo", "BlackCat-055, S1lv3rV1x3n", "SpookyPineapple", "SSix")
 //MONK
-var/global/list/monk = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor", "SpicySalami")
+var/global/list/monk = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor", "SpicySalami", "Mannypardo", "BlackCat-055, S1lv3rV1x3n", "SpookyPineapple", "SSix")
 //FUTA
-var/global/list/futa = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor", "SpicySalami")
+var/global/list/futa = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor", "SpicySalami", "Mannypardo", "BlackCat-055, S1lv3rV1x3n", "SpookyPineapple", "SSix")
 //30CM
-var/global/list/mobilephone = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor", "SpicySalami")
+var/global/list/mobilephone = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor", "SpicySalami", "Mannypardo", "BlackCat-055, S1lv3rV1x3n", "SpookyPineapple", "SSix")
 //TELEFONE
-var/global/list/remigrator = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor", "SpicySalami")
+var/global/list/remigrator = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor", "SpicySalami", "Mannypardo", "BlackCat-055, S1lv3rV1x3n", "SpookyPineapple", "SSix")
 //REMIGRATION
-var/global/list/thirtycm = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor", "SpicySalami")
+var/global/list/thirtycm = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor", "SpicySalami", "Mannypardo", "BlackCat-055, S1lv3rV1x3n", "SpookyPineapple", "SSix")
 //TRAP APOC
-var/global/list/trapapoc = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor", "SpicySalami")
+var/global/list/trapapoc = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor", "SpicySalami", "Mannypardo", "BlackCat-055, S1lv3rV1x3n", "SpookyPineapple", "SSix")
 //OUTLAW
-var/global/list/outlaw = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor", "SpicySalami")
+var/global/list/outlaw = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor", "SpicySalami", "Mannypardo", "BlackCat-055, S1lv3rV1x3n", "SpookyPineapple", "SSix")
 //ADULT SQUIRE
-var/global/list/adultsquire = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor", "SpicySalami")
+var/global/list/adultsquire = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor", "SpicySalami", "Mannypardo", "BlackCat-055, S1lv3rV1x3n", "SpookyPineapple", "SSix")
 //ITEMS
-var/global/list/waterbottledonation = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor", "SpicySalami")
-var/global/list/luxurydonation = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor", "SpicySalami")
-var/global/list/pjack = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor", "SpicySalami")
+var/global/list/waterbottledonation = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor", "SpicySalami", "Mannypardo", "BlackCat-055, S1lv3rV1x3n", "SpookyPineapple", "SSix")
+var/global/list/luxurydonation = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor", "SpicySalami", "Mannypardo", "BlackCat-055, S1lv3rV1x3n", "SpookyPineapple", "SSix")
+var/global/list/pjack = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor", "SpicySalami", "Mannypardo", "BlackCat-055, S1lv3rV1x3n", "SpookyPineapple", "SSix")
 //OOC COLOR
-var/global/list/customooccolorlist = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor", "SpicySalami")
+var/global/list/customooccolorlist = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor", "SpicySalami", "Mannypardo", "BlackCat-055, S1lv3rV1x3n", "SpookyPineapple", "SSix")
 
-var/global/list/coolboombox = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor", "SpicySalami")
+var/global/list/coolboombox = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor", "SpicySalami", "Mannypardo", "BlackCat-055, S1lv3rV1x3n", "SpookyPineapple", "SSix")
 
-var/global/list/singer = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor", "SpicySalami")
+var/global/list/singer = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor", "SpicySalami", "Mannypardo", "BlackCat-055, S1lv3rV1x3n", "SpookyPineapple", "SSix")
 
-var/global/list/weeDonator = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor", "SpicySalami")
-var/global/list/baliset = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor", "SpicySalami")
-var/global/list/black_cloak = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor", "SpicySalami")
+var/global/list/weeDonator = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor", "SpicySalami", "Mannypardo", "BlackCat-055, S1lv3rV1x3n", "SpookyPineapple", "SSix")
+var/global/list/baliset = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor", "SpicySalami", "Mannypardo", "BlackCat-055, S1lv3rV1x3n", "SpookyPineapple", "SSix")
+var/global/list/black_cloak = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor", "SpicySalami", "Mannypardo", "BlackCat-055, S1lv3rV1x3n", "SpookyPineapple", "SSix")
 var/global/list/bee_queen = list()
 
 var/global/list/secret_devs = list("remis12")
