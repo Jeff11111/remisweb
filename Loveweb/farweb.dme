@@ -95,6 +95,7 @@
 #define FILE_DIR "honk/sound/new/ACTIONS/VAGINA/TOUCH"
 #define FILE_DIR "honk/sound/new/Moans"
 #define FILE_DIR "honk/sound/new/Moans/hot"
+#define FILE_DIR "honk/sound/new/Moans/male"
 #define FILE_DIR "honk/sound/new/Moans/medium"
 #define FILE_DIR "honk/sound/new/Moans/mild"
 #define FILE_DIR "html"

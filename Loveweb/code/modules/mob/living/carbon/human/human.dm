@@ -105,7 +105,7 @@
 	init_skills()
 	init_stats()
 	add_teeth()
-	if(femboy == FALSE)
+	if(!femboy)
 		bodyhair()
 	create_pain_threshold()
 	add_fingers()
@@ -1140,7 +1140,7 @@
 
 /mob/living/carbon/human/revive()
 	add_teeth()
-	if(femboy == FALSE)
+	if(!femboy)
 		bodyhair()
 	add_fingers()
 	create_pain_threshold()
@@ -1446,7 +1446,7 @@
 
 	create_pain_threshold()
 
-	if(femboy == FALSE)
+	if(!femboy)
 		bodyhair()
 
 	add_teeth()
