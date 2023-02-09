@@ -336,7 +336,7 @@ var/list/cuckoldlist = list()
 	var/male_noises_volume = 90
 	if(H.femboy)
 		male_noises = "honk/sound/new/Moans/male/femboy[rand(1, 7)].ogg"
-		male_noises_volume = 130
+		male_noises_volume = 160
 	switch(H.gender)
 		if(MALE)
 			playsound(loc, male_noises, male_noises_volume, 0, -5)
@@ -956,7 +956,7 @@ var/list/cuckoldlist = list()
 			if(g == "m" && !H.femboy)
 				playsound(loc, "honk/sound/interactions/moan_[g][moan].ogg", 90, 0, -5)
 			else if(g == "m" && H.femboy)
-				playsound(loc, "honk/sound/new/Moans/male/femboy[moan].ogg", 130, 0, -6)
+				playsound(loc, "honk/sound/new/Moans/male/femboy[moan].ogg", 160, 0, -6)
 			else if (g == "f")
 				var/sound_path
 				var/sound
