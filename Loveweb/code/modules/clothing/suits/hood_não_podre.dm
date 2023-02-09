@@ -4,8 +4,8 @@
 /obj/item/clothing/suit/storage/vest/goodhood/morticiancloak
 	name = "Mortician's Cloak"
 	desc = "The cloak of death. Used by morticians to take bums to the web."
-	icon_state = "mortus"
-	item_state = "bumcoat"
+	icon_state = "mortician"
+	item_state = "mortician"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	flags = FPRINT | TABLEPASS | ONESIZEFITSALL
 	weight = 5
@@ -15,9 +15,11 @@
 /obj/item/clothing/suit/storage/vest/goodhood/morticiancloak/attackhand_right(mob/living/carbon/human/H)
 	spawn(0)
 		if(hoodon)
+			item_state = "[initial(item_state)]"
 			hoodon = 0
 			H.remove_hood()
 		else
+			item_state = "[initial(item_state)]_hooded"
 			hoodon = 1
 			H.add_hood()
 

@@ -306,7 +306,7 @@ var/list/cuckoldlist = list()
 	var/mob/living/carbon/human/lastfucked
 	var/lfhole
 	var/potenzia = 10
-	var/resistenza = 200
+	var/resistenza = 1000
 	var/lust = 0
 	var/erpcooldown = 0
 	var/multiorgasms = 0

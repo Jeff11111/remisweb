@@ -1811,7 +1811,6 @@ If you draw the arms, sleeves and suit arms at once, there are clipping issues.
 /mob/living/carbon/human/proc/bodyhair(var/update_icons=1)
 	var/fat = (FAT in src.mutations)
 	if(ismonster(src)) return
-	if(gender == MALE && femboy) return
 	overlays_standing[BODYHAIR_LAYER] = null
 	overlays_lying[BODYHAIR_LAYER] = null
 	if(species.name == "Human" && !fat)
@@ -1820,8 +1819,9 @@ If you draw the arms, sleeves and suit arms at once, there are clipping issues.
 		var/image/lying = overlay_image('icons/mob/human_detail.dmi', "[prefix]bodyhair_l")
 		standing.color = rgb(r_hair, g_hair, b_hair)
 		lying.color = rgb(r_hair, g_hair, b_hair)
-		overlays_standing[BODYHAIR_LAYER] = standing
-		overlays_lying[BODYHAIR_LAYER] = lying
+		if(!(gender == MALE && src.femboy == TRUE))
+			overlays_standing[BODYHAIR_LAYER] = standing
+			overlays_lying[BODYHAIR_LAYER] = lying
 
 /mob/living/carbon/human/proc/remove_bodyhair(var/update_icons=1)
 	if(ismonster(src)) return

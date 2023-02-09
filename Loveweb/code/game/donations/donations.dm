@@ -3,6 +3,7 @@
 /mob/living/var/specialdesc
 /mob/living/var/soap_item
 /mob/living/var/pjack_item
+/mob/living/var/hclipper_item
 
 /obj/structure/lifeweb/var/list/itemstake = list()
 /obj/structure/lifeweb/var/amount_book = 1
@@ -29,6 +30,7 @@
 
 /obj/structure/lifeweb/proc/init_items(var/mob/living/carbon/human/H)
 	itemstake = list()
+	itemstake.Add("*Hairclippers*")
 	if(H.ckey == "redvent")
 		itemstake.Add("*Tattered Hood*")
 	if(H.ckey == "slojanko")
@@ -118,6 +120,10 @@
 			if(!receiver.pjack_item)
 				spawnitem = /obj/item/toy/pumpkinjack
 				receiver.pjack_item = TRUE
+		if("*Hairclippers*")
+			if(!receiver.hclipper_item)
+				spawnitem = /obj/item/weapon/scissors/hairclipper
+				receiver.hclipper_item = TRUE
 		if("*Amulet of Lechery*")
 			spawnitem = /obj/item/clothing/head/amulet/lechery
 		if("*Dreamer's Diary*")
