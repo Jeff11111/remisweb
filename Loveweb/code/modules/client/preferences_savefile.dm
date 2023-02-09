@@ -62,6 +62,7 @@
 	S["family"]		        >> family
 	S["roundsplayed"]		>> roundsplayed
 	S["togglefuta"]			>> togglefuta
+	S["togglefemboy"]		>> togglefemboy
 	S["togglesize"]			>> togglesize
 	S["graphicsSetting"]	>> graphicsSetting
 	S["fullscreenSetting"]	>> fullscreenSetting
@@ -86,6 +87,7 @@
 	UI_style_alpha	= sanitize_integer(UI_style_alpha, 0, 255, initial(UI_style_alpha))
 	if(isnull(roundsplayed)) roundsplayed = 0
 	if(isnull(togglefuta)) togglefuta = 0
+	if(isnull(togglefemboy)) togglefemboy = 0
 	if(isnull(togglesize)) togglesize = 0
 	if(isnull(ambi_volume)) ambi_volume = 60
 	if(isnull(music_volume)) music_volume = 70
@@ -119,6 +121,7 @@
 	S["roundsplayed"]		<< roundsplayed
 	S["toggle_nat"]			<< toggle_nat
 	S["togglefuta"]			<< togglefuta
+	S["togglefemboy"]		<< togglefemboy
 	S["togglesize"]			<< togglesize
 	S["graphicsSetting"]	<< graphicsSetting
 	S["fullscreenSetting"]	<< fullscreenSetting

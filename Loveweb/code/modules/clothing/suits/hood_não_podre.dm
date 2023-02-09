@@ -15,11 +15,9 @@
 /obj/item/clothing/suit/storage/vest/goodhood/morticiancloak/attackhand_right(mob/living/carbon/human/H)
 	spawn(0)
 		if(hoodon)
-			item_state = "[initial(item_state)]"
 			hoodon = 0
 			H.remove_hood()
 		else
-			item_state = "[initial(item_state)]_hooded"
 			hoodon = 1
 			H.add_hood()
 
