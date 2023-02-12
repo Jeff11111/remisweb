@@ -1828,6 +1828,9 @@ If you draw the arms, sleeves and suit arms at once, there are clipping issues.
 	overlays_standing[BODYHAIR_LAYER] = null
 	overlays_lying[BODYHAIR_LAYER] = null
 
+/mob/living/carbon/human/proc/femboy_ize(var/update_icons=1)
+	f_style = "Shaved"
+
 //Human Overlays Indexes/////////
 #undef MUTANTRACE_LAYER
 #undef MUTATIONS_LAYER

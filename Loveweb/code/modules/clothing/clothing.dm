@@ -306,6 +306,7 @@ BLIND     // can't see anything
 	'icons/mob/clothing/suit_parts_male_larm.dmi',
 	'icons/mob/clothing/suit_parts_male_rarm.dmi')
 	var/hide_uniform_sleeves = FALSE
+	var/one_sprite = FALSE //THE ONE SPRITE IS REAL
 
 /obj/item/clothing/suit/add_armor_layer(var/obj/item/I, var/mob/user)
 	if(user:wear_suit != src)

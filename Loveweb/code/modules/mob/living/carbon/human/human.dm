@@ -114,6 +114,8 @@
 		regenerate_icons()
 	if(key)
 		old_key = src?.client?.key
+	if(femboy)
+		femboy_ize()
 
 /mob/living/carbon/human/Bump(atom/movable/AM as mob|obj, yes)
 	if ((!( yes ) || now_pushing))

@@ -13,7 +13,6 @@
 	to_chat(H, "<span class='erpbold'><big>I am secretly a man!</big></span>")
 	return ..()
 
-
 /mob/living/carbon/human/proc/isFemboy()//Used to tell if someone is scum (a Femboy).
 	if(species && species.name == "Femboy")
 		return 1

@@ -336,7 +336,7 @@ var/list/cuckoldlist = list()
 	var/male_noises_volume = 90
 	if(H.femboy)
 		male_noises = "honk/sound/new/Moans/male/femboy[rand(1, 7)].ogg"
-		male_noises_volume = 160
+		male_noises_volume = 200
 	switch(H.gender)
 		if(MALE)
 			playsound(loc, male_noises, male_noises_volume, 0, -5)
@@ -533,10 +533,14 @@ var/list/cuckoldlist = list()
 	else
 		src.visible_message("<span class='erpbold'>[src]</span> <span class='cumzone'>cums on the floor!</span>")
 
-
+	var/male_noises = "honk/sound/interactions/final_m[rand(1, 5)].ogg"
+	var/male_noises_volume = 90
+	if(src.femboy)
+		male_noises = "honk/sound/new/Moans/male/femboy[rand(1, 7)].ogg"
+		male_noises_volume = 200
 	switch(src.gender)
 		if(MALE)
-			playsound(loc, "honk/sound/interactions/final_m[rand(1, 5)].ogg", 90, 0, -5)
+			playsound(loc, male_noises, male_noises_volume, 0, -5)
 		if(FEMALE)
 			playsound(loc, "honk/sound/interactions/final_f[rand(1, 3)].ogg", 90, 0, -5)
 	if (has_penis())

@@ -241,9 +241,9 @@ var/list/awaydestinations = list()	//a list of landmarks that the warpgate can t
 
 var/sqladdress = "127.0.0.1"
 var/sqlport = "3306"
-var/sqldb = "white"
-var/sqllogin = "root"
-var/sqlpass = ""
+var/sqldb = "remisweb"
+var/sqllogin = "horndog"
+var/sqlpass = "yummygock"
 
 	// For FTP requests. (i.e. downloading runtime logs.)
 	// However it'd be ok to use for accessing attack logs and such too, which are even laggier.

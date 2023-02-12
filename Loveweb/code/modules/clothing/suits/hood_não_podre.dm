@@ -3,7 +3,7 @@
 
 /obj/item/clothing/suit/storage/vest/goodhood/morticiancloak
 	name = "Mortician's Cloak"
-	desc = "The cloak of death. Used by morticians to take bums to the web."
+	desc = "The cloak of death."
 	icon_state = "mortician"
 	item_state = "mortician"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
@@ -11,6 +11,7 @@
 	weight = 5
 	storage_slots = 2
 	hoodon = 0
+	hide_uniform_sleeves = TRUE
 
 /obj/item/clothing/suit/storage/vest/goodhood/morticiancloak/attackhand_right(mob/living/carbon/human/H)
 	spawn(0)

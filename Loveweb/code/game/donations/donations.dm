@@ -152,11 +152,10 @@
 	}
 	receiver.donationsUsed += spawnitem
 	var/obj/item/W = new spawnitem(receiver.loc)
-	receiver.put_in_active_hand(spawnitem)
 	if(spawnitem == /obj/item/device/cellphone)
 		var/obj/item/device/cellphone/C = W
 		var/obj/item/device/rim_card/R = new()
 		C.rimcard = R
 		R.loc = src
 		R.Phone = src
-	to_chat(receiver, "<i>Oh, it's here...</i>")
+	receiver.put_in_active_hand(W)

@@ -5,7 +5,7 @@ var/roundsinvite = 1
 client/verb/prompt_command()
 	set name = "Command Prompt"
 	set category = "OOC"
-	var/list/inputlist = list("showlads","togglenat","setspouse","invite","togglefuta","togglefemboy","mycolor","retro","love","auth", "register", "add_donator", "ban", "unban", "add_role", "absencelabiosdeseda", "superretro","remove_role", "musica", "tremer","rsctoggle","fix64","togglesquire","togglesize","setfontsize")
+	var/list/inputlist = list("showlads","togglenat","setspouse","togglefuta","togglefemboy","mycolor","retro","love","auth","add_donator", "ban", "unban", "add_role", "absencelabiosdeseda", "superretro","remove_role", "musica", "tremer","rsctoggle","fix64","togglesquire","togglesize","setfontsize")
 	var/list/debug = list("showgamemode", "setgamemode", "changeskill", "showaspect")
 	var/chosenoption = input("Input a command.","[src.key]")
 	if(!chosenoption)
@@ -13,9 +13,6 @@ client/verb/prompt_command()
 	if(inputlist.Find(chosenoption))
 		to_chat(src, "Command Used : <b>[chosenoption]</b>")
 		switch(chosenoption)
-			if("register")
-				async_call(.proc/RegisterCallback, "HandleRegistrationDeferred", list(src.ckey), src)
-				return
 			if("showlads")
 				src.showlads()
 				return
@@ -25,27 +22,6 @@ client/verb/prompt_command()
 			if("love")
 				src.sendlove()
 				return
-			if("invite")
-				if((ckey(usr.key) in comradelist) || usr.client.holder || usr.ckey == SECRET_GUARDIAN)
-				//if(ckey(usr.key) in villainlist || ckey(usr.key) in comradelist)
-					if(usr.client.prefs.roundsplayed < roundsinvite  && !usr.client.holder && !(usr.ckey == SECRET_GUARDIAN))
-						to_chat(src, "<span class='highlighttext'>You need [roundsinvite] rounds to invite other players. You have [usr.client.prefs.roundsplayed] rounds played.</span>")
-						return
-					else
-						invite_ckey()
-						return
-				else
-					if(ckey(usr.key) in villainlist)
-						if(usr.client.prefs.roundsplayed < roundsinvite && !usr.client.holder && !(usr.ckey == SECRET_GUARDIAN))
-							to_chat(src, "<span class='highlighttext'>You need [roundsinvite] rounds to invite other players. You have [usr.client.prefs.roundsplayed] rounds played.</span>")
-							return
-						else
-							invite_ckey()
-							return
-					else
-						to_chat(src, "<span class='highlighttext'>You are not allowed to do that.</span>")
-						return
-
 			if("superretro")
 				if(src.prefs.UI_type == "Luna")
 					to_chat(src, "Retro UI enabled, Remember to Reconnect.")
@@ -114,9 +90,6 @@ client/verb/prompt_command()
 				prefs.savefile_update()
 				return
 			if("togglesize")
-				if(!thirtycm.Find(src.ckey))
-					to_chat(usr, "<span class='combatbold'>[pick(fnord)]</span> <span class='combat'>[pick("I'm poor","I don't have it","My wallet is empty","I'm broke")]!</span>")
-					return
 				if(src.mob.type != /mob/new_player)
 					to_chat(usr, "<span class='combatbold'>FAIL!</span><span class='combat'> It can only be changed in the lobby!</span>")
 					return
@@ -257,7 +230,7 @@ client/verb/prompt_command()
 						H.combat_musicoverlay = S
 						to_chat(H, "<span class='highlighttext'><b>MÚSICA CUSTOM ATIVADA</b></span>")
 					return
-			if("tremer")
+			if("tremer") //This is actually fucking retarded. Who made this shit? Actual fucking anime protagonists
 				if(ishuman(src.mob) && ckey == "stimusz" || ckey == "mynameajeff" || ckey == "wolxy" || ckey == "bailol" || ckey == "comicao1" || ckey == "necbromancer")
 					var/mob/living/carbon/human/H = mob
 

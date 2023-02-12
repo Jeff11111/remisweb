@@ -68,7 +68,7 @@ obj/structure/bookcase/adult
 	establish_db_connection()
 	if(!dbcon.IsConnected())
 		world.log << "ERROR: Unable to connect to database."
-		//to_chat(world, "ERRO!")
+		to_chat(world, "ERRO!")
 	else
 		var/DBQuery/query = dbcon.NewQuery("SELECT * FROM erro_library WHERE sqlcategory='[category]'")
 		query.Execute()

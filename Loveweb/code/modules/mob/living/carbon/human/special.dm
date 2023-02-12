@@ -33,10 +33,10 @@
 	description = "Você pretende ser o futuro Marduk."
 	descriptionen = "You pretend to become the future Marduk."
 
-/datum/special/allah
-	name = "Allah"
-	description = "أنت من أتباع الله الواحد"
-	descriptionen = "أنت من أتباع الله الواحد"
+// /datum/special/allah
+// 	name = "Allah"
+// 	description = "أنت من أتباع الله الواحد"
+// 	descriptionen = "أنت من أتباع الله الواحد"
 
 /datum/special/comicsans
 	name = "comicsans"
@@ -156,10 +156,10 @@
 	description = "Você tinha perdido seu braço direito por uns anos, agora ambas suas mãos são igualmente ágeis."
 	descriptionen = "You were missing your right arm for a couple of years. Now both your hands are equally agile."*/
 
-/datum/special/deathweb
-	name = "deathweb"
-	description = "You are deathly afraid of the lifeweb. Being put into it would have catastrophic results."
-	descriptionen = "You are deathly afraid of the lifeweb. Being put into it would have catastrophic results."
+// /datum/special/deathweb
+// 	name = "deathweb"
+// 	description = "You are deathly afraid of the lifeweb. Being put into it would have catastrophic results."
+// 	descriptionen = "You are deathly afraid of the lifeweb. Being put into it would have catastrophic results."
 
 /datum/special/bulletdodger
 	name = "bulletdodger"
@@ -291,6 +291,7 @@
 	limitationsen = "Marduk."
 	description = "Até um homem forte como você precisa de um ajudante. Você está sendo assistido por uma pistola Magnum 66."
 	descriptionen = "Even a strongman like you require a helper. You are being assisted by a Magnum 66 pistol."
+
 /*
 /datum/special/succubus
 	name = "succubus"
@@ -299,6 +300,7 @@
 	description = "You're a succubus, able to enslave men through your bedroom tricks."
 	descriptionen = "You're a succubus, able to enslave men through your bedroom tricks."
 */
+
 /datum/special/archmortus
 	name = "archmortus"
 	limitations = "Mortus."
@@ -316,15 +318,15 @@
 	description = "During your childhood you had to treat your ill grandma. You've learned a lot about medicine and surgery, but your grandma died in terrible pain."
 	descriptionen = "During your childhood you had to treat your ill grandma. You've learned a lot about medicine and surgery, but your grandma died in terrible pain."
 
-/datum/special/fragile
-	name = "fragile"
-	description = "Você é uma coisinha frágil."
-	descriptionen = "You are a fragile thing."
+// /datum/special/fragile
+// 	name = "fragile"
+// 	description = "Você é uma coisinha frágil."
+// 	descriptionen = "You are a fragile thing."
 
-/datum/special/scaredark
-	name = "scaredark"
-	description = "You know what kind of things can lure in the shadows. You cannot stand to be in the dark."
-	descriptionen = "You know what kind of things can lure in the shadows. You cannot stand to be in the dark."
+// /datum/special/scaredark
+// 	name = "scaredark"
+// 	description = "You know what kind of things can lure in the shadows. You cannot stand to be in the dark."
+// 	descriptionen = "You know what kind of things can lure in the shadows. You cannot stand to be in the dark."
 
 /datum/special/youlooksick
 	name = "youlooksick"
@@ -371,10 +373,10 @@
 	description = "You should have been paying more attention to yourself. You're in a bad physical shape."
 	descriptionen = "You should have been paying more attention to yourself. You're in a bad physical shape."
 
-/datum/special/wormcrawl
-	name = "wormcrawl"
-	description = "You are scared of worms and you hate them. No one in the world could make you crawl."
-	descriptionen = "You are scared of worms and you hate them. No one in the world could make you crawl."
+// /datum/special/wormcrawl
+// 	name = "wormcrawl"
+// 	description = "You are scared of worms and you hate them. No one in the world could make you crawl."
+// 	descriptionen = "You are scared of worms and you hate them. No one in the world could make you crawl."
 
 /datum/special/robustmeister
 	name = "robustmeister"
@@ -390,12 +392,12 @@
 	description = "Thanks to your pretty face and playful character, you've achieved the rank of an Amuser."
 	descriptionen = "Thanks to your pretty face and playful character, you've achieved the rank of an Amuser."
 
-/datum/special/little_sherif
-	name = "littlesheriff"
-	limitations = "Sheriff."
-	limitationsen = "Sheriff."
-	description = "While you may be young, your just actions and love for the law have given you the opportunity to become Sheriff."
-	descriptionen = "While you may be young, your just actions and love for the law have given you the opportunity to become Sheriff."
+// /datum/special/little_sherif
+// 	name = "littlesheriff"
+// 	limitations = "Sheriff."
+// 	limitationsen = "Sheriff."
+// 	description = "While you may be young, your just actions and love for the law have given you the opportunity to become Sheriff."
+// 	descriptionen = "While you may be young, your just actions and love for the law have given you the opportunity to become Sheriff."
 
 /datum/special/rich
 	name = "rich"
@@ -434,12 +436,12 @@
 	description = "You have something extra."
 	descriptionen = "You have something extra."
 
-/datum/special/hitman
-	name = "special service"
-	limitations = "Dockers."
-	limitationsen = "Dockers."
-	description = "You are an expensive hired service from Gahan, you look the part as well."
-	descriptionen = "You are an expensive hired service from Gahan, you look the part as well."
+// /datum/special/hitman
+// 	name = "special service"
+// 	limitations = "Dockers."
+// 	limitationsen = "Dockers."
+// 	description = "You are an expensive hired service from Gahan, you look the part as well."
+// 	descriptionen = "You are an expensive hired service from Gahan, you look the part as well."
 
 /datum/special/cucked
 	name = "cucked"
