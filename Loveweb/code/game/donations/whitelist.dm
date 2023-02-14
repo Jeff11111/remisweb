@@ -1,50 +1,50 @@
 /////////////FATES/////////////
 //SEASPOTTER MERC
-var/global/list/seaspotter_merc = list("remis12", "jimmynutron2013", "guppygaxx", "soulvapor", "spicysalami", "mannypardo", "blackcat-055", "s1lv3rv1x3n", "spookypineapple", "ssix", "lacfiliaowo", "mackrelhead", "derpiestbruh", "arachnox", "dean brollis")
+var/global/list/seaspotter_merc = list("remis12", "jimmynutron2013", "guppygaxx", "soulvapor", "spicysalami", "mannypardo", "blackcat-055", "s1lv3rv1x3n", "spookypineapple", "ssix", "lacfiliaowo", "mackrelhead", "derpiestbruh", "arachnox", "dean brollis", "nekoslave", "nitche", "tapirrank", "muaru")
 //RED DAWN MERC
-var/global/list/reddawn_merc = list("remis12", "jimmynutron2013", "guppygaxx", "soulvapor", "spicysalami", "mannypardo", "blackcat-055", "s1lv3rv1x3n", "spookypineapple", "ssix", "lacfiliaowo", "mackrelhead", "derpiestbruh", "arachnox", "dean brollis")
+var/global/list/reddawn_merc = list("remis12", "jimmynutron2013", "guppygaxx", "soulvapor", "spicysalami", "mannypardo", "blackcat-055", "s1lv3rv1x3n", "spookypineapple", "ssix", "lacfiliaowo", "mackrelhead", "derpiestbruh", "arachnox", "dean brollis", "nekoslave", "nitche", "tapirrank", "muaru")
 //MERCENARY
-var/global/list/mercenary_donor = list("remis12", "jimmynutron2013", "guppygaxx", "soulvapor", "spicysalami", "mannypardo", "blackcat-055", "s1lv3rv1x3n", "spookypineapple", "ssix", "lacfiliaowo", "mackrelhead", "derpiestbruh", "arachnox", "dean brollis")
+var/global/list/mercenary_donor = list("remis12", "jimmynutron2013", "guppygaxx", "soulvapor", "spicysalami", "mannypardo", "blackcat-055", "s1lv3rv1x3n", "spookypineapple", "ssix", "lacfiliaowo", "mackrelhead", "derpiestbruh", "arachnox", "dean brollis", "nekoslave", "nitche", "tapirrank", "muaru")
 //URCHIN
-var/global/list/urchin_donor = list("remis12", "jimmynutron2013", "guppygaxx", "soulvapor", "spicysalami", "mannypardo", "blackcat-055", "s1lv3rv1x3n", "spookypineapple", "ssix", "lacfiliaowo", "mackrelhead", "derpiestbruh", "arachnox", "dean brollis")
+var/global/list/urchin_donor = list("remis12", "jimmynutron2013", "guppygaxx", "soulvapor", "spicysalami", "mannypardo", "blackcat-055", "s1lv3rv1x3n", "spookypineapple", "ssix", "lacfiliaowo", "mackrelhead", "derpiestbruh", "arachnox", "dean brollis", "nekoslave", "nitche", "tapirrank", "muaru")
 //TRIBUNAL VET
-var/global/list/tribunal_vet = list("remis12", "jimmynutron2013", "guppygaxx", "soulvapor", "spicysalami", "mannypardo", "blackcat-055", "s1lv3rv1x3n", "spookypineapple", "ssix", "lacfiliaowo", "mackrelhead", "derpiestbruh", "arachnox", "dean brollis")
+var/global/list/tribunal_vet = list("remis12", "jimmynutron2013", "guppygaxx", "soulvapor", "spicysalami", "mannypardo", "blackcat-055", "s1lv3rv1x3n", "spookypineapple", "ssix", "lacfiliaowo", "mackrelhead", "derpiestbruh", "arachnox", "dean brollis", "nekoslave", "nitche", "tapirrank", "muaru")
 //LORD
 var/global/list/lord = list("remis12", "jimmynutron2013", "GuppyLaxx", "Soulvapor", "SpicySalami", "Mannypardo", "Mannypardo")
 //CRUSADER
-var/global/list/crusader = list("remis12", "jimmynutron2013", "guppygaxx", "soulvapor", "spicysalami", "mannypardo", "blackcat-055", "s1lv3rv1x3n", "spookypineapple", "ssix", "lacfiliaowo", "mackrelhead", "derpiestbruh", "arachnox", "dean brollis")
+var/global/list/crusader = list("remis12", "jimmynutron2013", "guppygaxx", "soulvapor", "spicysalami", "mannypardo", "blackcat-055", "s1lv3rv1x3n", "spookypineapple", "ssix", "lacfiliaowo", "mackrelhead", "derpiestbruh", "arachnox", "dean brollis", "nekoslave", "nitche", "tapirrank", "muaru")
 //TOPHAT
-var/global/list/tophat = list("remis12", "jimmynutron2013", "guppygaxx", "soulvapor", "spicysalami", "mannypardo", "blackcat-055", "s1lv3rv1x3n", "spookypineapple", "ssix", "lacfiliaowo", "mackrelhead", "derpiestbruh", "arachnox", "dean brollis")
+var/global/list/tophat = list("remis12", "jimmynutron2013", "guppygaxx", "soulvapor", "spicysalami", "mannypardo", "blackcat-055", "s1lv3rv1x3n", "spookypineapple", "ssix", "lacfiliaowo", "mackrelhead", "derpiestbruh", "arachnox", "dean brollis", "nekoslave", "nitche", "tapirrank", "muaru")
 //MONK
-var/global/list/monk = list("remis12", "jimmynutron2013", "guppygaxx", "soulvapor", "spicysalami", "mannypardo", "blackcat-055", "s1lv3rv1x3n", "spookypineapple", "ssix", "lacfiliaowo", "mackrelhead", "derpiestbruh", "arachnox", "dean brollis")
+var/global/list/monk = list("remis12", "jimmynutron2013", "guppygaxx", "soulvapor", "spicysalami", "mannypardo", "blackcat-055", "s1lv3rv1x3n", "spookypineapple", "ssix", "lacfiliaowo", "mackrelhead", "derpiestbruh", "arachnox", "dean brollis", "nekoslave", "nitche", "tapirrank", "muaru")
 //FUTA
-var/global/list/futa = list("remis12", "jimmynutron2013", "guppygaxx", "soulvapor", "spicysalami", "mannypardo", "blackcat-055", "s1lv3rv1x3n", "spookypineapple", "ssix", "lacfiliaowo", "mackrelhead", "derpiestbruh", "arachnox", "dean brollis")
+var/global/list/futa = list("remis12", "jimmynutron2013", "guppygaxx", "soulvapor", "spicysalami", "mannypardo", "blackcat-055", "s1lv3rv1x3n", "spookypineapple", "ssix", "lacfiliaowo", "mackrelhead", "derpiestbruh", "arachnox", "dean brollis", "nekoslave", "nitche", "tapirrank", "muaru")
 //30CM
-var/global/list/mobilephone = list("remis12", "jimmynutron2013", "guppygaxx", "soulvapor", "spicysalami", "mannypardo", "blackcat-055", "s1lv3rv1x3n", "spookypineapple", "ssix", "lacfiliaowo", "mackrelhead", "derpiestbruh", "arachnox", "dean brollis")
+var/global/list/mobilephone = list("remis12", "jimmynutron2013", "guppygaxx", "soulvapor", "spicysalami", "mannypardo", "blackcat-055", "s1lv3rv1x3n", "spookypineapple", "ssix", "lacfiliaowo", "mackrelhead", "derpiestbruh", "arachnox", "dean brollis", "nekoslave", "nitche", "tapirrank", "muaru")
 //TELEFONE
-var/global/list/remigrator = list("remis12", "jimmynutron2013", "guppygaxx", "soulvapor", "spicysalami", "mannypardo", "blackcat-055", "s1lv3rv1x3n", "spookypineapple", "ssix", "lacfiliaowo", "mackrelhead", "derpiestbruh", "arachnox", "dean brollis")
+var/global/list/remigrator = list("remis12", "jimmynutron2013", "guppygaxx", "soulvapor", "spicysalami", "mannypardo", "blackcat-055", "s1lv3rv1x3n", "spookypineapple", "ssix", "lacfiliaowo", "mackrelhead", "derpiestbruh", "arachnox", "dean brollis", "nekoslave", "nitche", "tapirrank", "muaru")
 //REMIGRATION
-var/global/list/thirtycm = list("remis12", "jimmynutron2013", "guppygaxx", "soulvapor", "spicysalami", "mannypardo", "blackcat-055", "s1lv3rv1x3n", "spookypineapple", "ssix", "lacfiliaowo", "mackrelhead", "derpiestbruh", "arachnox", "dean brollis")
+var/global/list/thirtycm = list("remis12", "jimmynutron2013", "guppygaxx", "soulvapor", "spicysalami", "mannypardo", "blackcat-055", "s1lv3rv1x3n", "spookypineapple", "ssix", "lacfiliaowo", "mackrelhead", "derpiestbruh", "arachnox", "dean brollis", "nekoslave", "nitche", "tapirrank", "muaru")
 //TRAP APOC
-var/global/list/trapapoc = list("remis12", "jimmynutron2013", "guppygaxx", "soulvapor", "spicysalami", "mannypardo", "blackcat-055", "s1lv3rv1x3n", "spookypineapple", "ssix", "lacfiliaowo", "mackrelhead", "derpiestbruh", "arachnox", "dean brollis")
+var/global/list/trapapoc = list("remis12", "jimmynutron2013", "guppygaxx", "soulvapor", "spicysalami", "mannypardo", "blackcat-055", "s1lv3rv1x3n", "spookypineapple", "ssix", "lacfiliaowo", "mackrelhead", "derpiestbruh", "arachnox", "dean brollis", "nekoslave", "nitche", "tapirrank", "muaru")
 //OUTLAW
-var/global/list/outlaw = list("remis12", "jimmynutron2013", "guppygaxx", "soulvapor", "spicysalami", "mannypardo", "blackcat-055", "s1lv3rv1x3n", "spookypineapple", "ssix", "lacfiliaowo", "mackrelhead", "derpiestbruh", "arachnox", "dean brollis")
+var/global/list/outlaw = list("remis12", "jimmynutron2013", "guppygaxx", "soulvapor", "spicysalami", "mannypardo", "blackcat-055", "s1lv3rv1x3n", "spookypineapple", "ssix", "lacfiliaowo", "mackrelhead", "derpiestbruh", "arachnox", "dean brollis", "nekoslave", "nitche", "tapirrank", "muaru")
 //ADULT SQUIRE
-var/global/list/adultsquire = list("remis12", "jimmynutron2013", "guppygaxx", "soulvapor", "spicysalami", "mannypardo", "blackcat-055", "s1lv3rv1x3n", "spookypineapple", "ssix", "lacfiliaowo", "mackrelhead", "derpiestbruh", "arachnox", "dean brollis")
+var/global/list/adultsquire = list("remis12", "jimmynutron2013", "guppygaxx", "soulvapor", "spicysalami", "mannypardo", "blackcat-055", "s1lv3rv1x3n", "spookypineapple", "ssix", "lacfiliaowo", "mackrelhead", "derpiestbruh", "arachnox", "dean brollis", "nekoslave", "nitche", "tapirrank", "muaru")
 //ITEMS
-var/global/list/waterbottledonation = list("remis12", "jimmynutron2013", "guppygaxx", "soulvapor", "spicysalami", "mannypardo", "blackcat-055", "s1lv3rv1x3n", "spookypineapple", "ssix", "lacfiliaowo", "mackrelhead", "derpiestbruh", "arachnox", "dean brollis")
-var/global/list/luxurydonation = list("remis12", "jimmynutron2013", "guppygaxx", "soulvapor", "spicysalami", "mannypardo", "blackcat-055", "s1lv3rv1x3n", "spookypineapple", "ssix", "lacfiliaowo", "mackrelhead", "derpiestbruh", "arachnox", "dean brollis")
-var/global/list/pjack = list("remis12", "jimmynutron2013", "guppygaxx", "soulvapor", "spicysalami", "mannypardo", "blackcat-055", "s1lv3rv1x3n", "spookypineapple", "ssix", "lacfiliaowo", "mackrelhead", "derpiestbruh", "arachnox", "dean brollis")
+var/global/list/waterbottledonation = list("remis12", "jimmynutron2013", "guppygaxx", "soulvapor", "spicysalami", "mannypardo", "blackcat-055", "s1lv3rv1x3n", "spookypineapple", "ssix", "lacfiliaowo", "mackrelhead", "derpiestbruh", "arachnox", "dean brollis", "nekoslave", "nitche", "tapirrank", "muaru")
+var/global/list/luxurydonation = list("remis12", "jimmynutron2013", "guppygaxx", "soulvapor", "spicysalami", "mannypardo", "blackcat-055", "s1lv3rv1x3n", "spookypineapple", "ssix", "lacfiliaowo", "mackrelhead", "derpiestbruh", "arachnox", "dean brollis", "nekoslave", "nitche", "tapirrank", "muaru")
+var/global/list/pjack = list("remis12", "jimmynutron2013", "guppygaxx", "soulvapor", "spicysalami", "mannypardo", "blackcat-055", "s1lv3rv1x3n", "spookypineapple", "ssix", "lacfiliaowo", "mackrelhead", "derpiestbruh", "arachnox", "dean brollis", "nekoslave", "nitche", "tapirrank", "muaru")
 //OOC COLOR
-var/global/list/customooccolorlist = list("remis12", "jimmynutron2013", "guppygaxx", "soulvapor", "spicysalami", "mannypardo", "blackcat-055", "s1lv3rv1x3n", "spookypineapple", "ssix", "lacfiliaowo", "mackrelhead", "derpiestbruh", "arachnox", "dean brollis")
+var/global/list/customooccolorlist = list("remis12", "jimmynutron2013", "guppygaxx", "soulvapor", "spicysalami", "mannypardo", "blackcat-055", "s1lv3rv1x3n", "spookypineapple", "ssix", "lacfiliaowo", "mackrelhead", "derpiestbruh", "arachnox", "dean brollis", "nekoslave", "nitche", "tapirrank", "muaru")
 
-var/global/list/coolboombox = list("remis12", "jimmynutron2013", "guppygaxx", "soulvapor", "spicysalami", "mannypardo", "blackcat-055", "s1lv3rv1x3n", "spookypineapple", "ssix", "lacfiliaowo", "mackrelhead", "derpiestbruh", "arachnox", "dean brollis")
+var/global/list/coolboombox = list("remis12", "jimmynutron2013", "guppygaxx", "soulvapor", "spicysalami", "mannypardo", "blackcat-055", "s1lv3rv1x3n", "spookypineapple", "ssix", "lacfiliaowo", "mackrelhead", "derpiestbruh", "arachnox", "dean brollis", "nekoslave", "nitche", "tapirrank", "muaru")
 
-var/global/list/singer = list("remis12", "jimmynutron2013", "guppygaxx", "soulvapor", "spicysalami", "mannypardo", "blackcat-055", "s1lv3rv1x3n", "spookypineapple", "ssix", "lacfiliaowo", "mackrelhead", "derpiestbruh", "arachnox", "dean brollis")
+var/global/list/singer = list("remis12", "jimmynutron2013", "guppygaxx", "soulvapor", "spicysalami", "mannypardo", "blackcat-055", "s1lv3rv1x3n", "spookypineapple", "ssix", "lacfiliaowo", "mackrelhead", "derpiestbruh", "arachnox", "dean brollis", "nekoslave", "nitche", "tapirrank", "muaru")
 
-var/global/list/weeDonator = list("remis12", "jimmynutron2013", "guppygaxx", "soulvapor", "spicysalami", "mannypardo", "blackcat-055", "s1lv3rv1x3n", "spookypineapple", "ssix", "lacfiliaowo", "mackrelhead", "derpiestbruh", "arachnox", "dean brollis")
-var/global/list/baliset = list("remis12", "jimmynutron2013", "guppygaxx", "soulvapor", "spicysalami", "mannypardo", "blackcat-055", "s1lv3rv1x3n", "spookypineapple", "ssix", "lacfiliaowo", "mackrelhead", "derpiestbruh", "arachnox", "dean brollis")
-var/global/list/black_cloak = list("remis12", "jimmynutron2013", "guppygaxx", "soulvapor", "spicysalami", "mannypardo", "blackcat-055", "s1lv3rv1x3n", "spookypineapple", "ssix", "lacfiliaowo", "mackrelhead", "derpiestbruh", "arachnox", "dean brollis")
+var/global/list/weeDonator = list("remis12", "jimmynutron2013", "guppygaxx", "soulvapor", "spicysalami", "mannypardo", "blackcat-055", "s1lv3rv1x3n", "spookypineapple", "ssix", "lacfiliaowo", "mackrelhead", "derpiestbruh", "arachnox", "dean brollis", "nekoslave", "nitche", "tapirrank", "muaru")
+var/global/list/baliset = list("remis12", "jimmynutron2013", "guppygaxx", "soulvapor", "spicysalami", "mannypardo", "blackcat-055", "s1lv3rv1x3n", "spookypineapple", "ssix", "lacfiliaowo", "mackrelhead", "derpiestbruh", "arachnox", "dean brollis", "nekoslave", "nitche", "tapirrank", "muaru")
+var/global/list/black_cloak = list("remis12", "jimmynutron2013", "guppygaxx", "soulvapor", "spicysalami", "mannypardo", "blackcat-055", "s1lv3rv1x3n", "spookypineapple", "ssix", "lacfiliaowo", "mackrelhead", "derpiestbruh", "arachnox", "dean brollis", "nekoslave", "nitche", "tapirrank", "muaru")
 var/global/list/bee_queen = list()
 
 var/global/list/secret_devs = list("remis12")

@@ -163,6 +163,7 @@
 	desc = ""
 	density = 0
 	anchored = 1
+	layer = MOB_LAYER
 	var/on = TRUE
 	pixel_y = 8
 
@@ -187,15 +188,17 @@
 	if(!istype(AM, /mob/living/carbon/human))
 		return
 
-	if(prob(3))
-		var/mob/living/carbon/human/H = AM
-		for(var/limbcheck in list(BP_L_FOOT,BP_R_FOOT))//But we need to see if we have legs.
-			var/datum/organ/external/affecting = H.get_organ(limbcheck)
-			if(affecting.status & ORGAN_DESTROYED)//Oh shit, we don't have have any legs, we can't jump.
-				return
-		var/chosenOrgan = pick("l_foot","r_foot")
-		H.apply_damage(15	, BRUTE, chosenOrgan)
-		to_chat(H, "<span class='combat'>You kick the lamp post!</span>")
+	//Have you niggas actually played lifeweb before? You are so fucking  stupid uncreactive and scuffed, holy fucking shit ytou need to end your fuckinhg lives
+
+	// if(prob(3))
+	// 	var/mob/living/carbon/human/H = AM
+	// 	for(var/limbcheck in list(BP_L_FOOT,BP_R_FOOT))//But we need to see if we have legs.
+	// 		var/datum/organ/external/affecting = H.get_organ(limbcheck)
+	// 		if(affecting.status & ORGAN_DESTROYED)//Oh shit, we don't have have any legs, we can't jump.
+	// 			return
+	// 	var/chosenOrgan = pick("l_foot","r_foot")
+	// 	H.apply_damage(15	, BRUTE, chosenOrgan)
+	// 	to_chat(H, "<span class='combat'>You kick the lamp post!</span>")
 
 /obj/machinery/soulbreaker_light
 	name = "lamp"
