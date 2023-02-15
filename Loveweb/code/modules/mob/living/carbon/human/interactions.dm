@@ -3,6 +3,9 @@
 #define CONDOM_REGULAR 2
 #define CONDOM_BIG 3
 
+#define ROUGH "grab"
+#define GENTLE "help"
+
 /obj/item/condom_wrapper
 	name = "condom"
 	icon = 'icons/obj/personal.dmi'
@@ -227,47 +230,22 @@ var/list/cuckoldlist = list()
 	var/dat = "<META http-equiv='X-UA-Compatible' content='IE=edge' charset='UTF-8'><style type='text/css'> body {font-family: Times; cursor: url('http://lfwb.ru/Icons/pointer.cur'), auto;} a {text-decoration:none;outline: none;border: none;margin:-1px;} a:focus{outline:none;} a:hover {color:#0d0d0d;background:#505055;outline: none;border: none;} a.active { text-decoration:none; color:#533333;} a.inactive:hover {color:#0d0d0d;background:#bb0000} a.active:hover {color:#bb0000;background:#0f0f0f} a.inactive:hover { text-decoration:none; color:#0d0d0d; background:#bb0000}</style>"
 	dat += "<body background bgColor=#0d0d0d text=#862525 alink=#777777 vlink=#777777 link=#777777>"
 	dat += "<title>Interactions</title><B><HR><FONT size=3>INTERACTIONS - [H.partner]</FONT></B><BR><HR>"
-	//var/ya = "&#1103;"
-
-	//dat +=  {"• <A href='?src=\ref[usr];interaction=bow'>Bow.</A><BR>"}
-	//if (Adjacent(P))
-	//	dat +=  {"• <A href='?src=\ref[src];interaction=handshake'>Ïîïðèâåòñòâîâàòü.</A><BR>"}
-	//else
-	//	dat +=  {"• <A href='?src=\ref[src];interaction=wave'>Ïîïðèâåòñòâîâàòü.</A><BR>"}
 	if (hashands)
 		dat +=  {"<font size=3><B>Hands:</B></font><BR>"}
-		//if (Adjacent(P))
 		if(get_dist(H,P) <= 1)
-			//dat +=  {"• <A href='?src=\ref[usr];interaction=handshake'>Give handshake.</A><BR>"}
-			//dat +=  {"<A href='?src=\ref[usr];interaction=hug'>Hug!</A><BR>"}
-			//dat +=  {"• <A href='?src=\ref[usr];interaction=cheer'>Cheer!</A><BR>"}
-			//dat +=  {"• <A href='?src=\ref[usr];interaction=five'>Highfive.</A><BR>"}
-			//if (hashands_p)
-			//	dat +=  {"• <A href='?src=\ref[src];interaction=give'>Give.</A><BR>"}
-			dat +=  {"<A href='?src=\ref[usr];interaction=slap'>Slap face!</A><BR>"}
+			dat +=  {"<A href='?src=\ref[usr];interaction=slap'>Slap their face</A><BR>"}
 			if (hasanus_p)
-				dat += {"<A href='?src=\ref[usr];interaction=assslap'>Slap ass!</A><BR>"}
+				dat += {"<A href='?src=\ref[usr];interaction=assslap'>Slap their ass</A><BR>"}
 			if (isnude_p)
 				if (hasvagina_p && (!P.mutilated_genitals))
 					dat += {"<A href='?src=\ref[usr];interaction=fingering'>Put fingers in places.</A><BR>"}
 				if(P.gender == FEMALE || P.isFemboy())
 					dat += {"<A href='?src=\ref[usr];interaction=squeezebreast'>Squeeze breasts!</A><BR>"}
-			//if (P.species.name == "Tajaran")
-			//	dat +=  {"• <A href='?src=\ref[usr];interaction=pull'><font color=red>Pull big fluffy tail!</font></A><BR>"}
-			//	if(P.can_inject(H, 1))
-			//		dat +=  {"• <A href='?src=\ref[usr];interaction=pet'>Pet.</A><BR>"}
-			//dat +=  {"• <A href='?src=\ref[usr];interaction=knock'><font color=red>Knock upside the head.</font></A><BR>"}
-		//dat +=  {"• <A href='?src=\ref[usr];interaction=fuckyou'><font color=red>Insult.</font></A><BR>"}
-		//dat +=  {"• <A href='?src=\ref[usr];interaction=threaten'><font color=red>Threaten.</font></A><BR>"}
 
 	if (mouthfree && (lying == P.lying || !lying))
 		dat += {"<font size=3><B>Mouth:</B></font><BR>"}
 		dat += {"<A href='?src=\ref[usr];interaction=kiss'>Kiss.</A><BR>"}
-		//if (Adjacent(P))
 		if(get_dist(H,P) <= 1)
-			//if (mouthfree_p)
-			//	if (H.species.name == "Tajaran")
-			//		dat += {"• <A href='?src=\ref[usr];interaction=lick'>Ëèçíóòü â ùåêó.</A><BR>"}
 			if (isnude_p && (!P.mutilated_genitals))
 				if (haspenis_p)
 					dat += {"<A href='?src=\ref[usr];interaction=blowjob'>Suck cock.</A><BR>"}
@@ -276,9 +254,7 @@ var/list/cuckoldlist = list()
 				if (hasvagina_p)
 					dat += {"<A href='?src=\ref[usr];interaction=vaglick'>Lick vagina.</A><BR>"}
 			dat +=  {"<A href='?src=\ref[usr];interaction=spit'>Spit.</A><BR>"}
-		//dat +=  {"• <A href='?src=\ref[usr];interaction=tongue'><font color=red>Stick out tongue.</font></A><BR>"}
 
-	//if (isnude && usr.loc == H.partner.loc)
 	if(isnude && get_dist(usr,H.partner) <= 1)
 		if (haspenis && hashands)
 			dat += {"<font size=3><B>Forbidden Fruits:</B></font><BR>"}
@@ -289,8 +265,8 @@ var/list/cuckoldlist = list()
 					dat += {"<A href='?src=\ref[usr];interaction=anal'>Anal.</A><BR>"}
 				if (mouthfree_p)
 					dat += {"<A href='?src=\ref[usr];interaction=oral'>Oral.</A><BR>"}
-	//if (isnude && usr.loc == H.partner.loc && hashands)
-	if (isnude && get_dist(usr,H.partner) <= 1)
+
+	if (isnude && get_dist(usr,H.partner) == 0) //You must be on them ;)
 		if (hasvagina && haspenis_p && (!H.mutilated_genitals))
 			dat += {"<font size=3><B>Vagina:</B></font><BR>"}
 			dat += {"<A href='?src=\ref[usr];interaction=mount'>Mount</A><BR><HR>"}
@@ -441,23 +417,9 @@ var/list/cuckoldlist = list()
 				if(R.relation_holder == H.mind && R.name == "Husband")
 					break
 				else if (has_husband)
-					/*var/cucktest*/
 					if(H.has_penis())
-						/*cucktest = "<span class='combatbold'>[R.relation_holder.current.real_name]</span> <span class='combat'>(cucked by</span> <span class='combatbold'>[H.real_name]</span><span class='combat'>)</span>"*/
 						if(!R.relation_holder.current.CuckedBy.Find(H))
 							R.relation_holder.current.CuckedBy.Add(H)
-					/*if(cucktest in cuckoldlist)
-						break
-					cuckoldlist.Add(cucktest)
-					break*/
-		/*
-		if(H.client.married != P.ckey || P.client.married != H.ckey)
-			var/cucktest
-			for(var/mob/living/carbon/human/HH in player_list)
-				if(HH.ckey == H.client.married || HH.ckey == P.client.married)
-					cucktest = "<b>[H.real_name] <i>(H.ckey)</i></b> cucked <b>[HH.real_name] <i>[HH.ckey]</i></b> with <b>[P.real_name] <i>([P.ckey])</i></b>"
-					cuckoldlist.Add(cucktest)
-		*/
 	else
 		message = pick("cums!")
 		H.visible_message("<span class='erpbold'>[H]</span> <span class='cumzone'>[message].</span>")
@@ -578,6 +540,9 @@ var/list/cuckoldlist = list()
 	var/sound
 	var/sound_path // hack for blowjob. Can be used elsewhere to have dynamic sound depending on message
 	var/message = ""
+	//can you retards even gender your erp? it is much better
+	//var/p_pnouns = P.gender == MALE ? "his" : "her" uncomment when we use
+	var/h_pnouns = H.gender == MALE ? "his" : "her"
 	/*var/stun = round(potenzia / 3)*/
 	if(!H.HadSex.Find(P))
 		H.HadSex.Add(P)
@@ -727,7 +692,7 @@ var/list/cuckoldlist = list()
 				H.visible_message("<span class='erpbold'>[H]</span> <span class='erp'>goes in deep on</span> <span class='erpbold'>[P]</span><span class='erp'>.</span>")
 
 		if("handjob")
-			message = pick("strokes [P]'s dick.", "masturbate [P]'s penis.")
+			message = pick("strokes [P]'s dick.", "carresses [P]'s penis.")
 			if (H.lust < 6)
 				H.lust += 6
 
@@ -747,7 +712,7 @@ var/list/cuckoldlist = list()
 				else
 					P.moan()
 			if(prob(50))
-				sound = pick(flist("honk/sound/new/ACTIONS/PENIS/HANDJOB/"))
+				sound = pick(flist("honk/sound/new/ACTIONS/PENIS/HANDJOB/")) //penisweb
 				playsound(loc, "honk/sound/new/ACTIONS/PENIS/HANDJOB/[sound]", 90, 1, -5)
 			//H.do_fucking_animation(P)
 			if (prob(P.potenzia))
@@ -757,7 +722,7 @@ var/list/cuckoldlist = list()
 			message = pick("fucks [P].", "pounds [P]'s pussy.")
 
 			if (H.lastfucked != P || H.lfhole != hole)
-				message = pick(" shoves their dick into [P]'s pussy.")
+				message = pick(" thrusts [h_pnouns] dick into [P]'s pussy.")
 				sound = pick(flist("honk/sound/new/ACTIONS/VAGINA/INSERTION/"))
 				playsound(loc, "honk/sound/new/ACTIONS/VAGINA/INSERTION/[sound]", 90, 1, -5)
 				H.lastfucked = P
@@ -795,60 +760,25 @@ var/list/cuckoldlist = list()
 				sound = pick(flist("honk/sound/new/ACTIONS/BODY/COLLIDE/NAKED/"))
 				playsound(loc, "honk/sound/new/ACTIONS/BODY/COLLIDE/NAKED/[sound]", 90, 1, -5)
 
-/*		if("mount")
-			message = pick("fucks [P]'s dick", "rides [P]'s dick", "rides [P]")
-
-			if (H.lastfucked != P || H.lfhole != hole)
-				message = pick("begins to hop on [P]'s dick")
-				H.lastfucked = P
-				H.lfhole = hole
-
-			if(H.virgin)
-				H.virgin = FALSE
-				H.visible_message("<span class='erpbold'>[P]</span> <span class='erp'>pop's</span> <span class='erpbold'>[H]'s</span> <span class='erp'>cherry.</span>")
-
-			if (prob(5))
-				if(P.stat != DEAD)
-					H.visible_message("<span class='erpbold'>[H]</span> <span class='erp'>[message]</span>")
-					P.lust += H.potenzia * 2
-			else
-				H.visible_message("<span class='erpbold'>[H]</span> <span class='erp'>[message]</span>")
-			H.lust += P.potenzia
-			if (P.potenzia > 20)
-				H.stamina_loss += P.potenzia * 0.25
-			if (H.lust >= H.resistenza)
-				H.cum(H, P)
-			else
-				H.moan()
-/*
-			if (P.stat != DEAD)
-				P.lust += H.get_pleasure_amt("vaginal")
-				if (H.potenzia > 20)
-					P.stamina_loss += H.potenzia * 0.25
-				if (P.lust >= P.resistenza)
-					P.cum(P, H)
-				else
-					P.moan()*/
-			H.do_fucking_animation(P)
-			playsound(loc, "honk/sound/interactions/bang[rand(1, 3)].ogg", 70, 1, -1)
-*/
-
 		if("mount")
-			message = pick("fucks [P]'s dick", "rides [P]'s dick", "rides [P]")
+			if(H.a_intent == GENTLE || H.a_intent != ROUGH)
+				message = pick("fucks [P]'s cock", "rides [P]'s cock", "rides [P]")
+			else
+				message = pick("fucks [P] hard", "pounds [P]'s cock", "rides [P] rough")
 
-			/*if(potenzia >= 30)
-				P.Weaken(stun * 1.5)*/
-			if (H.lastfucked != P || H.lfhole != hole)
-				message = pick("begins to hop on [P]'s dick")//"îñòîðîæíî íàñàæèâàåòñ[ya] íà ïîëîâîé îðãàí [P]")
+			if(H.lastfucked != P || H.lfhole != hole)
+				if(H.a_intent == GENTLE || H.a_intent != ROUGH)
+					message = pick("starts to ride [P]'s cock")
+				else
+					message = pick("slams her hips onto [P]'s cock")
 				H.lastfucked = P
 				H.lfhole = hole
-				//add_logs(P, H, "fucked")
 
 			if(H.virgin)
 				H.virgin = FALSE
 				H.visible_message("<span class='erpbold'>[P]</span> <span class='erp'>pop's</span> <span class='erpbold'>[H]'s</span> <span class='erp'>cherry.</span>")
 
-			if (prob(5))
+			if(prob(5))
 				if(P.stat != DEAD)
 					H.visible_message("<span class='erpbold'>[H]</span> <span class='erp'>[message].</span>")
 					P.lust += H.potenzia * 2
@@ -858,11 +788,11 @@ var/list/cuckoldlist = list()
 			H.lust += P.potenzia
 			/*if (P.potenzia > 20)
 				H.stamina_loss += P.potenzia * 0.10*/
-			if (H.lust >= H.resistenza)
+			if(H.lust >= H.resistenza)
 				H.cum(H, P, "vagina")
 			else
 				H.moan(P.potenzia)
-			if (P.stat != DEAD)
+			if(P.stat != DEAD)
 				P.lust += H.get_pleasure_amt("vaginal")
 				if (P.lust >= P.resistenza)
 					P.cum(P, H, "vagina")
@@ -876,16 +806,19 @@ var/list/cuckoldlist = list()
 				sound = pick(flist("honk/sound/new/ACTIONS/BODY/COLLIDE/NAKED/"))
 				playsound(loc, "honk/sound/new/ACTIONS/BODY/COLLIDE/NAKED/[sound]", 90, 1, -5)
 		if("anal")
-
-			message = pick("fucks [P]'s ass.")
+			if(H.a_intent == GENTLE || H.a_intent != ROUGH)
+				message = pick("fucks [P]'s ass", "thrusts into [P] ass", "slides [h_pnouns] cock into [P]")
+			else
+				message = pick("pounds [P]'s hips", "slams [h_pnouns] dick into [P]'s ass")
 
 			if (H.lastfucked != P || H.lfhole != hole)
-				message = pick(" shoves their dick into [P]'s asshole.")
+				if(H.a_intent == GENTLE || H.a_intent != ROUGH)
+					message = pick(" presses the tip of [h_pnouns] cock into [P]'s ass")
+				else
+					message = pick(" thrusts [h_pnouns] cock into [P]'s ass")
 				H.lastfucked = P
 				H.lfhole = hole
 
-			/*if(potenzia >= 30)
-				P.Weaken(stun * 1.5)*/
 			if (prob(5) && P.stat != DEAD)
 				H.visible_message("<span class='erpbold'>[H]</span> <span class='erp'>[message]</span>")
 				P.lust += H.get_pleasure_amt("anal-2")
@@ -913,11 +846,12 @@ var/list/cuckoldlist = list()
 			playsound(loc, "honk/sound/new/ACTIONS/BODY/COLLIDE/NAKED/[sound]", 90, 1, -5)
 
 		if("oral")
+
 			message = pick(" fucks [P]'s mouth.")
 			if (prob(35))
 				message = pick(" sucks [P]'s [P.has_penis() ? "dick" : "vag"]..", " licks [P]'s [P.has_penis() ? "dick" : "vag"]..")
 			if (H.lastfucked != P || H.lfhole != hole)
-				message = pick(" shoves their dick down [P]'s throat.")
+				message = pick(" thrusts [h_pnouns] dick into [P]'s throat.")
 				H.lastfucked = P
 				H.lfhole = hole
 
@@ -1171,3 +1105,5 @@ var/list/cuckoldlist = list()
 #undef CONDOM_SMALL
 #undef CONDOM_REGULAR
 #undef CONDOM_BIG
+#undef ROUGH
+#undef GENTLE

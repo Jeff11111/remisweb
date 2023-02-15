@@ -434,7 +434,7 @@
 	happiness = -15
 
 /datum/happiness_event/wonder
-	description = "<span class='badmood'>• I've seen something nightmarish. I'm afraid for my life.</span>\n"
+	description = "<span class='badmood'>• I've seen something nightmarish. I'm afraid for my life!</span>\n"
 	happiness = -18
 
 //Song
