@@ -294,7 +294,8 @@ var/list/cuckoldlist = list()
 	var/sound
 	var/sound_path
 	var/message = ""
-	var/cum_message = "<span class='malfunction'>[pick("IT FEELS SO <span class='bold'>GOOD</span>", "MY MIND GOES BLANK FOR A SECOND")]!</span>"
+	var/cum_pnouns = P.gender == MALE ? "HE" : "SHE"
+	var/cum_message = "<span class='malfunction'>[pick("[cum_pnouns] MADE ME CUM!")]!</span>"
 	var/turf/T
 	if(!H.HadSex.Find(P))
 		H.HadSex.Add(P)
@@ -320,8 +321,10 @@ var/list/cuckoldlist = list()
 		if(FEMALE)
 			playsound(loc, "honk/sound/interactions/final_f[rand(1, 3)].ogg", 90, 0, -5)
 	H.druggy = 30
-	if(prob(5))
+	if(prob(0.1))
 		cum_message = "MEU DEUS!"
+	if(!P)
+		cum_message = "<span class='malfunction'>[pick("I came.")]!</span>"
 	to_chat(H, cum_message)
 	P.druggy = 30
 	if (has_penis())
