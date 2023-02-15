@@ -27,7 +27,7 @@
 /datum/reagent/alchemy/blessing_baccus
 	name = "Blessing Baccus"
 	id = "blessing_baccus"
-	description = "Makes your dancer bigger so you won't be a disappointment to your cheating wife."
+	description = "Makes your dancer bigger so you won't be a disappointment to your cheating wife." //what the fuck did you mean by this
 
 	color = "#EB5D95" // rgb: 200, 165, 220
 
