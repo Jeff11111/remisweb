@@ -1,5 +1,10 @@
 /atom
-	layer = 2
+	layer = TURF_LAYER
+	plane = GAME_PLANE
+
+	/// pass_flags that we are. If any of this matches a pass_flag on a moving thing, by default, we let them through.
+	var/pass_flags_self = NONE
+
 	var/level = 2
 	var/flags = FPRINT
 	var/list/fingerprints
@@ -735,6 +740,15 @@ var/list/fonts = list('code/chatpanel/browserassets/rsc/gothic.ttf', 'code/chatp
 
 /atom/movable/onDropInto(var/atom/movable/AM)
 	return loc // If onDropInto returns something, then dropInto will attempt to drop AM there.
+
+/// Returns true or false to allow the mover to move through src
+/atom/proc/CanAllowThrough(atom/movable/mover, border_dir)
+	SHOULD_CALL_PARENT(TRUE)
+	if(mover.pass_flags & pass_flags_self)
+		return TRUE
+	if(mover.throwing && (pass_flags_self & LETPASSTHROW))
+		return TRUE
+	return !density
 
 /atom/proc/fakesay(var/text = "", var/hex = "#add8e6", var/say_verb = "says")
 	var/image/objchatimage = image('icons/mob/talk.dmi', src, "h2", layer)

@@ -28,6 +28,15 @@
 	anchored = 1
 	dir = SOUTH
 
+/obj/structure/lifeweb/CanAllowThrough(atom/movable/mover, border_dir)
+	if(.)
+		return
+
+	if(border_dir == dir)
+		return FALSE
+
+	return TRUE
+
 /obj/structure/lifeweb/CanPass(atom/movable/mover, turf/target, height=0, air_group=0)
 	//if(!istype(src, /obj/structure/lifeweb/mushroom/glorbmushroom))
 	var/dir_bump

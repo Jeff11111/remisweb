@@ -18,6 +18,15 @@
 	// Garbage collection (controller).
 	var/waterproof
 
+/atom/movable/CanAllowThrough(atom/movable/mover, border_dir)
+	. = ..()
+	var/mob/moving_mob = null
+	if(istype(mover, /mob))
+		moving_mob = mover
+
+		if(moving_mob in moving_mob.buckled)
+			return TRUE
+
 /atom/movable/Bump(var/atom/A as mob|obj|turf|area, yes)
 	if(src.throwing)
 		src.throw_impact(A)

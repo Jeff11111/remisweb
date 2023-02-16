@@ -328,11 +328,11 @@ var/list/allClothing = list()
 	roundstartdisplay = 1
 	event_message = "The first wave of migrants is replaced by a lost Tribunal squad."
 
-/datum/round_event/washingmachine
-	name = "Comically Large Washing Machine"
-	id = "washing"
-	roundstartdisplay = 1
-	event_message = "Oh no! The fortress washing machine broke down!"
+// /datum/round_event/washingmachine end your life nigga
+// 	name = "Comically Large Washing Machine"
+// 	id = "washing"
+// 	roundstartdisplay = 1
+// 	event_message = "Oh no! The fortress washing machine broke down!"
 
 /datum/round_event/reallover
 	name = "Lover"

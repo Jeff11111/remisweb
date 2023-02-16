@@ -160,12 +160,23 @@
 	name = "lamp post"
 	icon = 'icons/obj/lighting2.dmi'
 	icon_state = "stolb1"
+	plane = TURF_PLANE
+	layer = TURF_LAYER
 	desc = ""
 	density = 0
 	anchored = 1
-	layer = MOB_LAYER
+	dir = NORTH
 	var/on = TRUE
 	pixel_y = 8
+
+/obj/machinery/lamppost/CanAllowThrough(atom/movable/mover, border_dir)
+	if(.)
+		return
+
+	if(border_dir == dir)
+		return FALSE
+
+	return TRUE
 
 /obj/machinery/lamppost/proc/update()
 	if(on)

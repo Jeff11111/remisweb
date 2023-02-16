@@ -440,6 +440,9 @@ proc/spawn_money_gold(var/sum, spawnloc)
 	var/list/options = list("CANCEL")
 	for(var/x = amount; x > 0; x--)
 		options.Add(x)
+		
+	if(amount == 1)
+		return ..()
 
 
 	var/amountDraw = input("How much?", "") in options
