@@ -294,8 +294,11 @@ var/list/cuckoldlist = list()
 	var/sound
 	var/sound_path
 	var/message = ""
-	var/cum_pnouns = P.gender == MALE ? "HE" : "SHE"
-	var/cum_message = "<span class='malfunction'>[pick("[cum_pnouns] MADE ME CUM!")]!</span>"
+	var/cum_pnouns1 = P.gender == MALE ? "He" : "She"
+	//var/cum_pnouns2 = H.gender == MALE ? "His" : "Her"
+	var/oh = pick("OH!", "GOODNESS!", "GOD!")
+	var/climax_word = pick("cum", "climax", "orgasm")
+	var/cum_message = "<span class='malfunction'>[pick("[oh] [lowertext(cum_pnouns1)] made me [climax_word]!")]</span>"
 	var/turf/T
 	if(!H.HadSex.Find(P))
 		H.HadSex.Add(P)
