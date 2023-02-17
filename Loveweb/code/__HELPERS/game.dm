@@ -416,3 +416,12 @@ datum/projectile_data
 			GetGreenPart(hexa),
 			GetBluePart(hexa)
 		)
+
+/proc/checkdir_type(atom/obj1, atom/obj2, type)
+	var/angle = 0
+	if(type == "opposite")
+		angle = 180
+	if(obj1.dir == turn(obj2.dir, angle))
+		return TRUE
+	else
+		return FALSE

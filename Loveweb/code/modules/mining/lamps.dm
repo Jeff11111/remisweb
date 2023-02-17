@@ -160,8 +160,8 @@
 	name = "lamp post"
 	icon = 'icons/obj/lighting2.dmi'
 	icon_state = "stolb1"
-	plane = TURF_PLANE
-	layer = TURF_LAYER
+	layer = OBJ_LAYER
+	plane = OBJ_PLANE
 	desc = ""
 	density = 0
 	anchored = 1

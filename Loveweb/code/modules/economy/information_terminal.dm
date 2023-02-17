@@ -25,6 +25,7 @@
 	New()
 		..()
 		var/matrix/M = matrix()
+		dir = SOUTH
 		M.Turn(180)
 		src.transform = M
 
@@ -36,6 +37,7 @@
 	New()
 		..()
 		var/matrix/M = matrix()
+		dir = EAST
 		M.Turn(90)
 		src.transform = M
 
@@ -44,6 +46,7 @@
 	New()
 		..()
 		var/matrix/M = matrix()
+		dir = WEST
 		M.Turn(-90)
 		src.transform = M
 
@@ -120,6 +123,8 @@
 		to_chat(usr, "I don't know how to fix this.")
 
 /obj/machinery/information_terminal/attack_hand(mob/living/carbon/human/user as mob)
+	if(!checkdir_type(user, src, "opposite") || get_dist(src, user) > 0)
+		return
 	if(!user.wear_id)
 		to_chat(usr, "I don't have a ring, I can't use the terminal!")
 		return
