@@ -306,11 +306,11 @@
 
 /obj/item/clothing/under/butler
 	name = "butler uniform"
-	desc = "Includes shoes and plaid"
+	desc = "looks nice right? I don't fucking care anymore."
 	icon_state = "butler"
 	item_state = "butler"
 	item_color = "butler"
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO|FEET
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
 
 /obj/item/clothing/under/sexymime
 	name = "sexy mime outfit"

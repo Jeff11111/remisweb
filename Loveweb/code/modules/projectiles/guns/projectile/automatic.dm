@@ -184,6 +184,8 @@
 	slot_flags = SLOT_BACK
 	origin_tech = "combat=5;materials=2"
 	fire_sound = 'sound/weapons/Gunshot3.ogg'
+	reload_sound = 'sound/weapons/guns/rifle_loadmag.ogg'
+	unload_sound = 'sound/weapons/guns/rifle_unload.ogg'
 	mag_type = /obj/item/ammo_magazine/external/mag556
 	item_worth = 350
 	recoil = 1.35
