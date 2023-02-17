@@ -22,31 +22,32 @@
 
 /obj/machinery/information_terminal/south
 	pixel_y = -32
+	dir = SOUTH
 	New()
 		..()
 		var/matrix/M = matrix()
-		dir = SOUTH
 		M.Turn(180)
 		src.transform = M
 
 /obj/machinery/information_terminal/north
+	dir = NORTH
 	pixel_y = 32
 
 /obj/machinery/information_terminal/east
 	pixel_x = 32
+	dir = EAST
 	New()
 		..()
 		var/matrix/M = matrix()
-		dir = EAST
 		M.Turn(90)
 		src.transform = M
 
 /obj/machinery/information_terminal/west
 	pixel_x = -32
+	dir = WEST
 	New()
 		..()
 		var/matrix/M = matrix()
-		dir = WEST
 		M.Turn(-90)
 		src.transform = M
 
@@ -123,7 +124,8 @@
 		to_chat(usr, "I don't know how to fix this.")
 
 /obj/machinery/information_terminal/attack_hand(mob/living/carbon/human/user as mob)
-	if(!checkdir_type(user, src, "opposite") || get_dist(src, user) > 0)
+	..()
+	if(!checkdir_type(user, src) || get_dist(src, user) > 0)
 		return
 	if(!user.wear_id)
 		to_chat(usr, "I don't have a ring, I can't use the terminal!")
