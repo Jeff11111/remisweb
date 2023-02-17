@@ -310,7 +310,6 @@
 	icon_state = "butler"
 	item_state = "butler"
 	item_color = "butler"
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
 
 /obj/item/clothing/under/sexymime
 	name = "sexy mime outfit"
