@@ -125,6 +125,7 @@
 
 /obj/machinery/information_terminal/attack_hand(mob/living/carbon/human/user as mob)
 	..()
+	user.set_dir(dir)
 	if(!checkdir_type(user, src) || get_dist(src, user) > 0)
 		return
 	if(!user.wear_id)
