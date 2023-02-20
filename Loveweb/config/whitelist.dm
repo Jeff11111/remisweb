@@ -1,6 +1,6 @@
 #define CKEYWHITELIST "config/ckey_whitelist.txt"
 
-var/global/list/ckeywhitelistweb = list("remis12", "jimmynutron2013", "guppygaxx", "soulvapor", "spicysalami", "mannypardo", "blackcat055", "s1lv3rv1x3n", "spookypineapple", "ssix", "lacfiliaowo", "mackrelhead", "derpiestbruh", "arachnox", "dean brollis", "nekoslave", "nitche", "tapirrank", "muaru")
+var/global/list/ckeywhitelistweb = list("remis12", "jimmynutron2013", "guppygaxx", "soulvapor", "spicysalami", "mannypardo", "blackcat055", "s1lv3rv1x3n", "spookypineapple", "ssix", "lacfiliaowo", "mackrelhead", "derpiestbruh", "arachnox", "dean brollis", "nekoslave", "nitche", "tapirrank", "muaru", "getbrecked", "dreadlord56")
 
 var/global/private_party = 1
 
@@ -8,7 +8,7 @@ var/global/list/proxyignore = list()
 
 var/global/list/comradelist = list()
 
-var/global/list/villainlist = list("remis12", "jimmynutron2013", "guppygaxx", "soulvapor", "spicysalami", "mannypardo", "blackcat055", "s1lv3rv1x3n", "spookypineapple", "ssix", "lacfiliaowo", "mackrelhead", "derpiestbruh", "arachnox", "dean brollis", "nekoslave", "nitche", "tapirrank", "muaru")
+var/global/list/villainlist = list("remis12", "jimmynutron2013", "guppygaxx", "soulvapor", "spicysalami", "mannypardo", "blackcat055", "s1lv3rv1x3n", "spookypineapple", "ssix", "lacfiliaowo", "mackrelhead", "derpiestbruh", "arachnox", "dean brollis", "nekoslave", "nitche", "tapirrank", "muaru", "getbrecked", "dreadlord56")
 
 var/global/list/pigpluslist = list()
 

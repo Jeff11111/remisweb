@@ -443,14 +443,14 @@
 // 	description = "You are an expensive hired service from Gahan, you look the part as well."
 // 	descriptionen = "You are an expensive hired service from Gahan, you look the part as well."
 
-/datum/special/cucked
-	name = "cucked"
-	limitations = "Married Men."
-	limitationsen = "Married Men."
-	description = "You've been overwhelmed by your thoughts of infidelity. Have your wife sleep with at least 5 other men."
-	descriptionen = "You've been overwhelmed by your thoughts of infidelity. Have your wife sleep with at least 5 other men."
-	reward = "10 Cromossomos"
-	rewarden = "10 Chromosomes"
+// /datum/special/cucked
+// 	name = "cucked"
+// 	limitations = "Married Men."
+// 	limitationsen = "Married Men."
+// 	description = "You've been overwhelmed by your thoughts of infidelity. Have your wife sleep with at least 5 other men."
+// 	descriptionen = "You've been overwhelmed by your thoughts of infidelity. Have your wife sleep with at least 5 other men."
+// 	reward = "10 Cromossomos"
+// 	rewarden = "10 Chromosomes"
 
 /mob/living/carbon/human/proc/special_load()
 	if(special)
